@@ -13,9 +13,9 @@ uncertain.
 The colours are as extracted from my [twitter bot](https://twitter.com/albumstoruin)
 
 ## Current Styles
-![anime-trauma-divorce](plot examples/images/anime-trauma-divorce.png)
-![merriweather](plot examples/images/merriweather.png)
-![punisher](plot examples/images/punisher.png)
+![anime-trauma-divorce](plot%20examples/images/anime-trauma-divorce.png)
+![merriweather](plot%20examples/images/merriweather.png)
+![punisher](plot%20examples/images/punisher.png)
 
 ## Inspiration
 - The general structure of this module has been heavily lifted from the 
