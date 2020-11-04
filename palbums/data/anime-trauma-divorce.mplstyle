@@ -1,0 +1,121 @@
+## This is a sample matplotlib configuration file - you can find a copy
+## of it on your system in site-packages/matplotlib/mpl-data/matplotlibrc
+## (which related to your Python installation location).
+##
+## See https://matplotlib.org/users/customizing.html#the-matplotlibrc-file
+## for more details on the paths which are checked for the configuration file.
+##
+## This file is best viewed in a editor which supports python mode syntax
+## highlighting.  Blank lines, or lines starting with a comment symbol, are
+## ignored, as are trailing comments.  Other lines must have the format:
+##     key : val  ## optional comment
+##
+## Formatting and style conventions for this file:
+##     - at least one whitesapce AROUND `:` to seperate key and val
+##         * prefer one whitesapce except for block colon alignment
+##     - at least two whitesapces BEFORE `##` to seperate the key-val pair and
+##       the trailing comments
+##         * prefer two whitesapces except for block `##` alignment
+##     - at least one whitesapce AFTER `##` to seperate the `##` marker and
+##       the comment text
+##         * prefer one whitespace except for indentation (listing, etc.), in
+##           which case, four more whitespaces are preferred
+##
+## Colors: for the color values below, you can either use
+##     - a matplotlib color string, such as r, k, or b
+##     - an rgb tuple, such as (1.0, 0.5, 0.0)
+##     - a hex string, such as ff00ff
+##     - a scalar grayscale intensity such as 0.75
+##     - a legal html color name, e.g., red, blue, darkslategray
+##### CONFIGURATION BEGINS HERE
+
+
+
+## ***************************************************************************
+## * PATCHES                                                                 *
+## ***************************************************************************
+patch.edgecolor       : 180d10  ## if forced, or patch is not filled
+
+
+## ***************************************************************************
+## * HATCHES                                                                 *
+## ***************************************************************************
+hatch.color     : 180d10
+
+
+## ***************************************************************************
+## * BOXPLOT                                                                 *
+## ***************************************************************************
+boxplot.flierprops.color           : 180d10
+boxplot.flierprops.markeredgecolor : 180d10
+boxplot.boxprops.color     : 180d10
+
+boxplot.whiskerprops.color     : 180d10
+
+boxplot.capprops.color     : 180d10
+
+## ***************************************************************************
+## * TEXT                                                                    *
+## ***************************************************************************
+## The text properties used by `text.Text`.
+## See https://matplotlib.org/api/artist_api.html#module-matplotlib.text
+## for more information on text properties
+text.color : 180d10
+
+
+## ***************************************************************************
+## * AXES                                                                    *
+## ***************************************************************************
+## Following are default face and edge colors, default tick sizes,
+## default fontsizes for ticklabels, and so on.  See
+## https://matplotlib.org/api/axes_api.html#module-matplotlib.axes
+axes.facecolor     : e5d4cd   ## axes background color
+axes.edgecolor     : 180d10   ## axes edge color
+axes.labelcolor    : 180d10
+
+axes.spines.left   : True  ## display axis spines
+axes.spines.bottom : True
+axes.spines.top    : False
+axes.spines.right  : False
+
+axes.prop_cycle : cycler('color', ['f183ae', '583047', '6e361c'])
+                   ## color cycle for plot lines as list of string colorspecs:
+                   ##     single letter, long name, or web-style hex
+				   ## As opposed to all other parameters in this file, the color
+				   ## values must be enclosed in quotes for this parameter,
+				   #  e.g. '1f77b4', instead of 1f77b4.
+                   ## See also https://matplotlib.org/tutorials/intermediate/color_cycle.html
+                   ## for more details on prop_cycle usage.
+                   ## IMPLEMENTATION NOTES:
+                   ## Blue, Yellow, Dark Blue, Legacy Green, Legacy Magenta, Legacy Orange, then 80% tints of the first three
+
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+xtick.color         : 180d10   ## color of the tick labels
+ytick.color         : 180d10   ## color of the tick labels
+
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+#grid.color     : 180d10   ## grid color
+#grid.linestyle : -       ## solid
+#grid.linewidth : 0.8     ## in points
+#grid.alpha     : 1.0     ## transparency, between 0.0 and 1.0
+
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+figure.dpi         : 150       ## figure dots per inch
+figure.facecolor   : e5d4cd     ## figure facecolor
+figure.edgecolor   : e5d4cd     ## figure edgecolor
+
+
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+## ***************************************************************************
+savefig.facecolor : e5d4cd       ## figure facecolor when saving
+savefig.edgecolor : e5d4cd       ## figure edgecolor when saving
